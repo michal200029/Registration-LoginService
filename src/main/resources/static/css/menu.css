@@ -1,0 +1,24 @@
+body{
+    margin: 0px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    background-color : #68bd45;
+    justify-content: flex-end;
+}
+
+.menu-element{
+    padding: 5px,5px,5px,5px;
+    color: black;
+    font-size: 20px;
+}
+
+.menu-element:hover{
+    background-color: red;
+}
+
+.menu-separator-v{
+	border-left: 2px solid white;
+}

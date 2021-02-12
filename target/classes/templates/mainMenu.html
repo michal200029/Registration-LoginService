@@ -1,0 +1,16 @@
+<div class="menu" xmlns:sec="http://www.w3.org/1999/xhtml">
+
+    <div class="menu-separator-v"></div>
+    <a class="menu-element" href="/guest_panel">Guest panel</a>
+
+    <div sec:authorize="hasAnyAuthority('USER','ADMIN','ROLE_USER')" class="menu-separator-v"></div>
+    <a sec:authorize="hasAnyAuthority('USER','ADMIN','ROLE_USER')" class="menu-element" href="/user_panel">User panel</a>
+
+    <div sec:authorize="hasAuthority('ADMIN')" class="menu-separator-v"></div>
+    <a sec:authorize="hasAuthority('ADMIN')" class="menu-element" href="/admin_panel">Admin panel</a>
+
+    <div class="menu-separator-v"></div>
+    <form action="/logout" method='POST'>
+        <button class="confirmButton" type="submit">Logout</button>
+    </form>
+</div>

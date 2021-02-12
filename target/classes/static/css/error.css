@@ -1,0 +1,12 @@
+.info{
+    background-color: red;
+    text-align: center;
+    margin: auto;
+}
+
+.backButton{
+    color: green;
+    width: 150px;
+    text-align: center;
+    margin: auto;
+}
